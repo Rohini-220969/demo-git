@@ -346,6 +346,52 @@ git remote add remote_name repository_URL
 Example
 git remote add origin https://github.com/rohini/demo.git
 Now your local repo is connected to the remote repo.
+![alt text](<Screenshot (43).png>)
+43. git remote remove
+Purpose
+Removes a remote repository connection.
+ Syntax
+git remote remove remote_name
+ Example
+git remote remove origin
+![alt text](<Screenshot (43)-1.png>)
+
+44. git fetch
+ Purpose
+Downloads latest changes from remote repository but does not merge them.
+ Syntax
+git fetch
+Example
+git fetch origin
+![alt text](<Screenshot (44).png>)
+45. git fetch --all
+Purpose
+Fetches updates from all remote repositories.
+Syntax
+git fetch --all
+Useful when you have multiple remotes.
+![alt text](<Screenshot (45).png>)
+
+46. git pull
+Purpose:
+Downloads and automatically merges changes from remote repository.
+Syntax:
+git pull
+Example:
+git pull origin main
+This performs:
+git fetch + git merge
+![alt text](<Screenshot (46).png>)
+
+47.git pull --rebase
+ Purpose
+Fetches changes and rebases your commits instead of merging.
+Keeps clean commit history.
+ Syntax
+git pull --rebase
+Example
+git pull --rebase origin main 
+
 
 
 
