@@ -310,7 +310,15 @@ You developed a feature in a branch and now want to add it to the main branch.
 git merge branch_name
 It merges branch_name -> current branch.
 ![alt text](<Screenshot (39).png>)
-39. 
+
+39. git merge --no-ff
+Purpose
+--no-ff means no fast-forward merge.
+Git will always create a new merge commit, even if a fast-forward merge is possible.
+This keeps the branch history visible.
+Syntax
+git merge --no-ff branch_name
+It merges the branch into the current branch.
 
 
 
