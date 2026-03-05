@@ -310,9 +310,42 @@ You developed a feature in a branch and now want to add it to the main branch.
 git merge branch_name
 It merges branch_name -> current branch.
 ![alt text](<Screenshot (39).png>)
-39. 
 
+39.  git merge --no-ff Means
+--no-ff means No Fast-Forward Merge.
+It forces Git to create a merge commit, even if a fast-forward merge is possible.
+This keeps the feature branch history visible.
+ Syntax
+git merge --no-ff branch_name
+![alt text](<Screenshot (40).png>)
+ Remote Repository Commands
 
+40. git remote
+Purpose
+Shows the remote repository names connected to your local repository.
+Syntax
+git remote
+Example
+origin
+origin = default remote repository.
+![alt text](<Screenshot (41).png>)
+41. git remote -v
+Purpose
+Shows remote repository URLs for fetch and push.
+Syntax
+git remote -v
+Example
+origin  https://github.com/rohini/demo.git (fetch)
+origin  https://github.com/rohini/demo.git (push)
+![alt text](<Screenshot (42).png>)
+42. git remote add
+Purpose
+Adds a new remote repository.
+Syntax
+git remote add remote_name repository_URL
+Example
+git remote add origin https://github.com/rohini/demo.git
+Now your local repo is connected to the remote repo.
 
 
 
