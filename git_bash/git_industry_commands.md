@@ -429,6 +429,7 @@ Useful when you want to switch branches without committing.
 git stash
  Example
 Suppose you edited main.cpp but didn’t commit yet.
+<<<<<<< Updated upstream
 ![alt text](<Screenshot (51).png>)
  52. git stash list
  Purpose
@@ -452,6 +453,11 @@ Changes restored
  Stash removed
 
 
+
+=======
+
+git stash
+>>>>>>> Stashed changes
 
 
 
