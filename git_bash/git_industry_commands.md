@@ -185,6 +185,142 @@ rename a file and move a file to another folder and automatically stage the chan
 git mv only works for files that are already:
 Added using git add
 Committed at least once
+![alt text](<Screenshot (26).png>)
+
+commit commands
+26. git commit
+syntax: git commit
+purpose: 
+saving your changes permanently into git history
+git add-select changes 
+git commit - save changes
+![alt text](<Screenshot (27).png>)
+
+27. git commit -m
+syntax:git commit -m " <something in string>"
+purpose:
+creates a commit with message directly in terminal
+![alt text](<Screenshot (28).png>)
+
+28. git commit --amend
+syntax: git commit --amend
+purpose: 
+change last commit message
+add forgotten files
+editor opens ->change message ->save
+![alt text](<Screenshot (29).png>)
+
+29. git commit --no-edit
+Syntax:
+git commit --amend --no-edit
+
+ Purpose:
+--no-edit means:
+ Do not change the previous commit message
+It keeps the same message.
+![alt text](<Screenshot (30).png>)
+
+Branch Management Commands
+30. git branch
+Purpose
+Shows all local branches in your repository.
+Syntax
+git branch
+Example
+git branch
+![alt text](<Screenshot (31).png>)
+31. git branch -a
+Purpose
+Shows all branches (local + remote).
+Syntax
+git branch -a
+Example
+ main
+  develop
+  remotes/origin/main
+  remotes/origin/develop
+![alt text](<Screenshot (32).png>)
+
+32. git branch -d
+ Purpose
+Deletes a branch safely.
+Git deletes the branch only if it is already merged.
+Syntax
+git branch -d branch_name
+Example
+git branch -d feature
+Branch deleted only if merged.
+![alt text](<Screenshot (33).png>)
+33. git branch -D
+ Purpose
+Force delete branch.
+Even if it is not merged.
+Syntax
+git branch -D branch_name
+Example
+git branch -D feature
+![alt text](<Screenshot (34).png>)
+34. git checkout
+Purpose
+Used to switch branches or restore files.
+ Syntax
+git checkout branch_name
+Example
+git checkout develop
+
+ ![alt text](<Screenshot (35).png>)
+ 35. git checkout -b
+Purpose
+Creates new branch + switches to it.
+Syntax
+git checkout -b branch_name
+Example
+git checkout -b feature-login
+Result:
+Branch created
+Automatically switched to it
+![alt text](<Screenshot (36).png>)
+36. git switch
+This is a modern command introduced later in Git to replace checkout for branch switching.
+ Purpose
+Switch branches.
+ Syntax
+git switch branch_name
+ Example
+git switch main
+![alt text](<Screenshot (37).png>)
+37. git switch -c
+ Purpose
+Create new branch and switch to it.
+ Syntax
+git switch -c branch_name
+Example
+git switch -c feature-payment
+ Branch created
+ Switched immediately.
+ ![alt text](<Screenshot (38).png>)
+
+ Merge & Integration Commands
+  38. git merge
+Purpose
+git merge is used to combine changes from one branch into another branch.
+Example:
+You developed a feature in a branch and now want to add it to the main branch.
+ Syntax
+git merge branch_name
+It merges branch_name -> current branch.
+![alt text](<Screenshot (39).png>)
+39. 
+
+
+
+
+
+
+
+
+
+
 
 
 
