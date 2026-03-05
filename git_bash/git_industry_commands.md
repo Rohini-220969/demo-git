@@ -383,7 +383,7 @@ This performs:
 git fetch + git merge
 ![alt text](<Screenshot (46).png>)
 
-47.git pull --rebase
+47. it pull --rebase
  Purpose
 Fetches changes and rebases your commits instead of merging.
 Keeps clean commit history.
@@ -391,6 +391,70 @@ Keeps clean commit history.
 git pull --rebase
 Example
 git pull --rebase origin main 
+![alt text](<Screenshot (47).png>)
+48. git push
+ Purpose
+Uploads your local commits to remote repository.
+Syntax
+git push
+Example
+git push origin main
+![alt text](<Screenshot (48).png>)
+
+49. git push -u origin branch-name
+ Purpose
+Pushes branch and sets upstream tracking.
+After this, you can simply use git push.
+Syntax
+git push -u origin branch-name
+Example
+git push -u origin feature-login
+![alt text](<Screenshot (49).png>)
+ 50. git push --force
+  Purpose
+Forces Git to overwrite remote history.
+ Syntax
+git push --force
+ Example
+git push --force origin main
+![alt text](image.png)
+
+stash commands
+
+51. git stash
+ Purpose
+Temporarily save your uncommitted changes and make the working directory clean.
+Useful when you want to switch branches without committing.
+ Syntax
+git stash
+ Example
+Suppose you edited main.cpp but didn’t commit yet.
+![alt text](<Screenshot (51).png>)
+ 52. git stash list
+ Purpose
+Shows all stored stashes.
+Syntax
+git stash list
+Example Output
+stash@{0}: WIP on main: Added login feature
+stash@{1}: WIP on develop: Updated UI
+![alt text](<Screenshot (52).png>)
+53. git stash pop
+ Purpose
+
+Restores the latest stash and removes it from stash list.
+Syntax
+git stash pop
+ Example
+git stash pop
+Result:
+Changes restored
+ Stash removed
+
+
+
+
+
 
 
 
