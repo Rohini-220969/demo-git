@@ -430,6 +430,7 @@ git stash
  Example
 Suppose you edited main.cpp but didn’t commit yet.
 
+Updated upstream
 ![alt text](<Screenshot (51).png>)
  52. git stash list
  Purpose
@@ -469,6 +470,9 @@ stash@{1}: WIP on main: Updated UI
 
 
 
+
+git stash
+ Stashed changes
 
 
 
