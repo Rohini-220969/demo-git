@@ -431,6 +431,7 @@ git stash
 Suppose you edited main.cpp but didn’t commit yet.
 
 
+
 ![alt text](<Screenshot (51).png>)
  52. git stash list
  Purpose
@@ -466,6 +467,7 @@ Output:
 
 stash@{0}: WIP on main: Added login feature
 stash@{1}: WIP on main: Updated UI
+
 
 
 
