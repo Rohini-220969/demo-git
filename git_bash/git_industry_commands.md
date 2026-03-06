@@ -531,7 +531,8 @@ git reset --mixed HEAD~1
 ![alt text](<Screenshot (59).png>)
 
 
-
+something is added
+![alt text](<Screenshot (61).png>)
 
 
 
