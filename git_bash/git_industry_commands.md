@@ -429,7 +429,7 @@ Useful when you want to switch branches without committing.
 git stash
  Example
 Suppose you edited main.cpp but didn’t commit yet.
-<<<<<<< Updated upstream
+
 ![alt text](<Screenshot (51).png>)
  52. git stash list
  Purpose
@@ -450,14 +450,24 @@ git stash pop
 git stash pop
 Result:
 Changes restored
- Stash removed
+stash removed
+
+54. git stash apply
+Purpose
+
+Restores the changes from a stash but keeps the stash in the stash list.
+
+ Syntax
+git stash apply
+ Example
+git stash list
+Output:
+
+stash@{0}: WIP on main: Added login feature
+stash@{1}: WIP on main: Updated UI
 
 
 
-=======
-
-git stash
->>>>>>> Stashed changes
 
 
 
